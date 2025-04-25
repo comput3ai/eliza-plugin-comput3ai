@@ -13,8 +13,8 @@ import {
   logger,
 } from "@elizaos/core";
 import dotenv from "dotenv";
-import { createComput3ApiClient } from "../utils/apiClient";
 import type { UserBalance } from "../types";
+import { createComput3ApiClient } from "../utils/apiClient";
 
 // Load environment variables
 dotenv.config();
@@ -170,13 +170,13 @@ export const getUserBalanceAction: Action = {
       {
         name: "{{name1}}",
         content: {
-          text: "How many tokens do I have in my Comput3AI account?",
+          text: "How many gpu minuts do I have in my Comput3AI account?",
         },
       },
       {
         name: "{{name2}}",
         content: {
-          text: "Let me check your current token balance...",
+          text: "Let me check your current gpu minuts balance...",
           actions: ["GET_USER_BALANCE"],
         },
       },
