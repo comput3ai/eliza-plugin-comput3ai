@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/plugin-compute3ai",
+  "name": "@elizaos/plugin-comput3ai",
   "description": "Plugin for Comput3AI GPU Services API",
   "version": "1.0.0-beta.1",
   "type": "module",
