@@ -26,7 +26,7 @@ This plugin enables interaction with Comput3AI's GPU services through the ElizaO
 
 1. Clone the repository:
 ```bash
-git clone github:comput3ai/plugin-comput3ai
+git clone https://github.com/comput3ai/eliza-plugin-comput3ai.git
 ```
 
 2. Install dependencies:
