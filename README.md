@@ -24,19 +24,26 @@ This plugin enables interaction with Comput3AI's GPU services through the ElizaO
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/comput3ai/eliza-plugin-comput3ai.git
-```
+https://github.com/elizaOS/eliza/
 
+1. Clone the repository into your eliza project packages folder:
+
+```bash
+git clone github:comput3ai/plugin-comput3ai
+```
 2. Install dependencies:
+add to your agent package.json 
+
+"@compute3ai/plugin-comput3ai": "workspace:*"
+
+3. Install dependencies:
 ```bash
-bun install
+pnpm install
 ```
 
-3. Build the plugin:
+4. Build the plugin:
 ```bash
-bun run build
+pnpm run build
 ```
 
 ## Configuration
@@ -45,15 +52,25 @@ The plugin requires the following environment variables:
 
 - `COMPUT3AI_API_KEY`: Your Comput3AI API key
 - `COMPUT3AI_WALLET_ADDRESS`: Your Comput3AI wallet address
+- `OPENAI_API_KEY=c3_api_key`
+- `OPENAI_API_URL`= https://api.comput3.ai/v1
+- `SMALL_OPENAI_MODEL`=llama3:70b
 
+MEDIUM_OPENAI_MODEL=llama3:70b
+LARGE_OPENAI_MODEL=llama3:70b
+DEFAULT_MODEL=llama3:70b
+MODEL_PROVIDER=openai
 ## Usage
 
-1. Start the plugin:
-```bash
-bun start
-```
+1. add the plugin @compute3ai/plugin-comput3ai to the ai agent charater.json file 
 
-2. Access the UI at `http://localhost:3000`
+2. Start the agent:
+
+pnpm run pnpm start --characters="path/to/your/character.json"
+
+3. Access the UI 
+
+pnpm start:client
 
 ### Example Commands
 
@@ -66,34 +83,6 @@ You can interact with the plugin through Eliza using natural language commands:
 - "List all my Comput3 workloads"
 - "Stop my workload {workload_id}"
 
-## Development
-
-- Run in development mode:
-```bash
-bun run dev
-```
-
-- Format code:
-```bash
-bun run format
-```
-
-- Check formatting:
-```bash
-bun run format:check
-```
-
-## Building
-
-```bash
-bun run build
-```
-
-## Publishing
-
-```bash
-bun run publish
-```
 
 ## License
 
