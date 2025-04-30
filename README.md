@@ -29,7 +29,7 @@ https://github.com/elizaOS/eliza/
 1. Clone the repository into your eliza project packages folder:
 
 ```bash
-git clone github:comput3ai/plugin-comput3ai
+git clone https://github.com/elizaOS/eliza/tree/v2-develop
 ```
 2. Install dependencies:
 add to your agent package.json 
@@ -38,12 +38,12 @@ add to your agent package.json
 
 3. Install dependencies:
 ```bash
-pnpm install
+bun install
 ```
 
 4. Build the plugin:
 ```bash
-pnpm run build
+bun run build
 ```
 
 ## Configuration
@@ -66,7 +66,7 @@ MODEL_PROVIDER=openai
 
 2. Start the agent:
 
-pnpm run pnpm start --characters="path/to/your/character.json"
+bun start --characters="path/to/your/character.json"
 
 3. Access the UI 
 
