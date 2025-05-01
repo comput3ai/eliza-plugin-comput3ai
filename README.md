@@ -24,12 +24,12 @@ This plugin enables interaction with Comput3AI's GPU services through the ElizaO
 
 ## Installation
 
-https://github.com/elizaOS/eliza/
+https://github.com/elizaOS/eliza/tree/v2-develop
 
 1. Clone the repository into your eliza project packages folder:
 
 ```bash
-git clone https://github.com/elizaOS/eliza/tree/v2-develop
+git clone https://github.com/comput3ai/eliza-plugin-comput3ai.git 
 ```
 2. Install dependencies:
 add to your agent package.json 
