@@ -66,11 +66,15 @@ MODEL_PROVIDER=openai
 
 2. Start the agent:
 
-bun start --characters="path/to/your/character.json"
+bun start 
 
 3. Access the UI 
+http://localhost:3000/
 
-pnpm start:client
+create your agent
+and add in your agent plugins add plugin-comput3ai
+
+start your agent 
 
 ### Example Commands
 
